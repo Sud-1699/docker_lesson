@@ -56,3 +56,6 @@ docker image rm <image-name>:<version>
 
 version is optional is not mentioned
 ```
+
+### Mistake I have learn
+While writing docker file in copy layer we need to precise about path if path is wrong then it will not relfect in nginx server properly
