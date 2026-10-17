@@ -1,0 +1,16 @@
+{
+  "name": "learning-express",
+  "version": "1.0.0",
+  "description": "Learning express js from zero to hero",
+  "license": "ISC",
+  "author": "Sud-1699",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "node": "node",
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
