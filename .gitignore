@@ -1,4 +1,11 @@
+# Node.JS
 node_modules
 
+# Vs Code
 .vscode
+
+# Angular
 .angular
+
+# IntelliJ
+.idea
