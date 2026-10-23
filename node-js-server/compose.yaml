@@ -1,0 +1,28 @@
+name: NodeJsApp
+
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: devDB
+      MONGO_INITDB_ROOT_PASSWORD: superDB
+    networks:
+      - node-js-app
+
+  mongo-express:
+    image: mongo-express
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_SERVER: mongodb
+      ME_CONFIG_MONGODB_ADMINUSERNAME: devDB
+      ME_CONFIG_MONGODB_ADMINPASSWORD: superDB
+    networks:
+      - node-js-app
+    depends_on:
+      - mongodb
+
+networks:
+  node-js-app:
